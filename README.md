@@ -1,1 +1,1 @@
-mode
+Just for fun. 
