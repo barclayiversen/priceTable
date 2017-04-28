@@ -17,13 +17,7 @@ var tiers = [
     {
     from: 1001, price: 1
   }
-]
-
-
-function priceTable(tiers) {
-  this.tiers = tiers;
-};
-
+];
 
 function getBill(priceStructure, usage) {
   var total;
@@ -63,3 +57,12 @@ function determineTotal(tier, usage) {
 }
 
 getBill(tiers, 1283);
+
+//Next step, make pricing table a class
+priceTable.prototype.determineTier(usage, tiers, callback) {
+
+};
+
+function priceTable(tiers) {
+  this.tiers = tiers;
+};
